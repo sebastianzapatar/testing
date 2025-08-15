@@ -1,0 +1,84 @@
+# --- Python / build ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.build/
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- Tests / cobertura ---
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- ML artefactos / modelos ---
+artifacts/
+models/
+checkpoints/
+runs/
+mlruns/
+tensorboard/
+*.onnx
+*.pt
+*.pth
+*.h5
+*.joblib
+*.pkl
+
+# --- Datos (no versionar crudos ni procesados pesados) ---
+data/raw/*
+data/interim/
+data/processed/
+data/external/
+# ¡Deja los .gitkeep si quieres conservar la estructura!
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# --- Logs / tmp ---
+logs/
+*.log
+*.tmp
+*.temp
+tmp/
+.cache/
+
+# --- Config/secretos ---
+.env
+.env.*
+*.env
+secrets.*
+*.key
+*.pem
+*.crt
+
+# --- IDE / SO ---
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Varios ---
+*.swp
+*.swo
